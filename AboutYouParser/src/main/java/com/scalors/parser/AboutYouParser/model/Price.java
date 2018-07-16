@@ -2,13 +2,13 @@ package com.scalors.parser.AboutYouParser.model;
 
 public class Price {
 
-		String min;
+		double min;
 
-		public String getMin() {
+		public double getMin() {
 			return min;
 		}
 
-		public void setMin(String min) {
+		public void setMin(double min) {
 			this.min = min;
 		}
 

@@ -4,7 +4,7 @@ public class Attributes {
 	
 	String name;
 	Price price;
-	String oldPrice;
+	double oldPrice;
 	ProductName attributes;
 	
 	public String getName() {
@@ -13,16 +13,11 @@ public class Attributes {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Price getCampaignPrice() {
-		return price;
-	}
-	public void setCampaignPrice(Price campaignPrice) {
-		this.price = campaignPrice;
-	}
-	public String getOldPrice() {
+	
+	public double getOldPrice() {
 		return oldPrice;
 	}
-	public void setOldPrice(String oldPrice) {
+	public void setOldPrice(double oldPrice) {
 		this.oldPrice = oldPrice;
 	}
 	@Override
@@ -34,6 +29,12 @@ public class Attributes {
 	}
 	public void setAttributes(ProductName attributes) {
 		this.attributes = attributes;
+	}
+	public Price getPrice() {
+		return price;
+	}
+	public void setPrice(Price price) {
+		this.price = price;
 	}
 	
 	
